@@ -11,9 +11,19 @@
 	</AutoCommandBar>
 	<ChildItems>
 		<InputField name="ВидЦены" id="3">
-			<DataPath>СылкаВидыЦен</DataPath>
+			<DataPath>ВидЦены</DataPath>
 			<ContextMenu name="ВидЦеныКонтекстноеМеню" id="4"/>
 			<ExtendedTooltip name="ВидЦеныРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<InputField name="ГруппыНоменлкатуры" id="9">
+			<DataPath>5/-4</DataPath>
+			<ContextMenu name="ГруппыНоменлкатурыКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ГруппыНоменлкатурыРасширеннаяПодсказка" id="11"/>
+		</InputField>
+		<InputField name="ВидыНоменклатуры" id="6">
+			<DataPath>ВидНоменклатуры</DataPath>
+			<ContextMenu name="ВидыНоменклатурыКонтекстноеМеню" id="7"/>
+			<ExtendedTooltip name="ВидыНоменклатурыРасширеннаяПодсказка" id="8"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -38,15 +48,37 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="СылкаВидыЦен" id="3">
+		<Attribute name="ВидЦены" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сылка виды цен</v8:content>
+					<v8:content>Вид цены</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидНоменклатуры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГруппНоменклатуры" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Групп номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogObject.Номенклатура</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
